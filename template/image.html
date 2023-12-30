@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    
+<header>
+    <h1>WELCOME TO MY PROFILE</h1>
+</header>
+
+<section>
+    <img src="/static/images/nagarj.jfif" alt="nagarj"/>
+    <h2>Name</h2>
+    <p>Nagarj Hegde</p>
+    <h2>About Me</h2>
+    <p>My name is Nagaraj Hegde from Sirsi, Karnataka.</p>
+    <h2>Position</h2>
+    <p>Data Engineer</p>
+
+    <h2>Contact Information</h2>
+    <ul>
+        <li>Email: nagarhegde766@gmail.com</li>
+        <li>Website: www.website.com</li>
+        <li>LinkedIn: www.linkedin.com/in/nagaraj</li>
+        <li>Contact: 8618598503</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Comments</h2>
+    <form method="post">
+        {% csrf_token %}
+        <label for="comment">ASK ME A QUESTION:</label><br>
+        <input type="text" name="n1">
+        <br>
+        <input type="submit" value="Submit Comment">
+    </form>
+</section>
+
+</body>
+</html>
